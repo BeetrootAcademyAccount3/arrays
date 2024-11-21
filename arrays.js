@@ -8,8 +8,27 @@
 
 // console.log(array1[4][1]);
 
-const originalArray1 = ["Banana", "Peach", "PineApple", "Apple", "Watermelon"];
-const originalArray2 = [3, 4, 2, 1, 5];
+let originalArray1 = ["Banana", "Peach", "PineApple", "Apple", "Watermelon"];
+// let originalArray2 = [...originalArray1];
+// let originalArray2 = [].concat(originalArray1);
+// let originalArray2 = originalArray1.slice();
+// let originalArray2 = originalArray1.map((element) => element);
+// let originalArray2 = Array.from(originalArray1);
+
+const originalArray2 = [];
+
+originalArray1.forEach((el) => {
+  //   originalArray2 = [1, 2, 3, 4];
+
+  originalArray2.push(el);
+});
+
+// let originalArray2 = structuredClone(originalArray1);
+
+// originalArray1.push("Strawberry");
+
+console.log(originalArray1);
+console.log(originalArray2);
 
 const str = "Hello";
 
@@ -46,5 +65,17 @@ const str = "Hello";
 
 // console.log(result);
 
-const result = str.split("").reverse().join("");
-console.log(result);
+// const result = str.split("").reverse().join("");
+// console.log(result);
+
+// for (let index = 0; index < originalArray1.length; index++) {
+//   const element = originalArray1[index];
+//   console.log(element);
+// }
+
+// for (const key in originalArray1) {
+//   const element = originalArray1[key];
+//   console.log(element);
+// }
+
+// originalArray1.forEach((value) => console.log(value));
